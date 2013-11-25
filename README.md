@@ -1,6 +1,6 @@
 # grunt-font-awesome-vars
 
-Simple file read/write plugin to update the font-awesome variables.less file @fa-font-path (i.e. for use with Bower to install font-awesome - which you then need to edit variables.less to the correct font-path. This plugin automates that process - both for the first time and in case you update the font-awesome bower plugin or want other developers to use bower install and have it "just work" without having to remember to edit the variables.less file after each install/update).
+Simple file read/write plugin to update the font-awesome variables.less and/or _variables.scss file(s) @fa-font-path and/or $fa-font-path (i.e. for use with Bower to install font-awesome - which you then need to edit variables.less / _variables.scss to the correct font-path. This plugin automates that process - both for the first time and in case you update the font-awesome bower plugin or want other developers to use bower install and have it "just work" without having to remember to edit the variables.less / _variables.scss file after each install/update).
 
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
@@ -26,7 +26,8 @@ Gruntfile.js
 	fontAwesomeVars: {
 		main: {
 			variablesLessPath: 'variables.less',
-			fontPath: '../bower_components/font-awesome/fonts'		//NOTE: this must be relative to FINAL, compiled .css file - NOT the variables.less file! For example, this would be the correct path if the compiled css file is main.css which is in 'src/build' and the font awesome font is in 'src/bower_components/font-awesome/fonts' - since to get from main.css to the fonts directory, you first go back a directory then go into bower_components > font-awesome > fonts.
+			variablesScssPath: '_variables.scss',
+			fontPath: '../bower_components/font-awesome/fonts'		//NOTE: this must be relative to FINAL, compiled .css file - NOT the variables.less / _variables.scss file! For example, this would be the correct path if the compiled css file is main.css which is in 'src/build' and the font awesome font is in 'src/bower_components/font-awesome/fonts' - since to get from main.css to the fonts directory, you first go back a directory then go into bower_components > font-awesome > fonts.
 		}
 	}
 ```
