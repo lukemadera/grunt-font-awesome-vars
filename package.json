@@ -1,7 +1,7 @@
 {
 	"name": "grunt-font-awesome-vars",
-	"description": "Edit font awesome variables.less to set font-path",
-	"version": "1.0.0",
+	"description": "Edit font awesome variables.less and/or _variables.scss to set font-path",
+	"version": "1.0.1",
 	"homepage": "https://github.com/lukemadera/grunt-font-awesome-vars",
 	"author": {
 		"name": "Luke Madera",
@@ -41,6 +41,8 @@
 		"font",
 		"awesome",
 		"less",
+		"scss",
+		"sass",
 		"variables",
 		"font-awesome",
 		"fontawesome",
